@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiwiUoW", "KiwiUoW\KiwiUoW.csproj", "{288011A3-8218-4E5A-9409-8B1AE3A0C7D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiwiUoW.Test", "KiwiUoW.Test\KiwiUoW.Test.csproj", "{1B6C62D3-BEA5-43C6-AFDF-25141260A2F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{288011A3-8218-4E5A-9409-8B1AE3A0C7D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288011A3-8218-4E5A-9409-8B1AE3A0C7D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288011A3-8218-4E5A-9409-8B1AE3A0C7D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288011A3-8218-4E5A-9409-8B1AE3A0C7D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B6C62D3-BEA5-43C6-AFDF-25141260A2F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6C62D3-BEA5-43C6-AFDF-25141260A2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6C62D3-BEA5-43C6-AFDF-25141260A2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6C62D3-BEA5-43C6-AFDF-25141260A2F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B6B9D31-854C-46A8-B065-38DDC743CC44}
+	EndGlobalSection
+EndGlobal
