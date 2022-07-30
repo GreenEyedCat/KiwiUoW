@@ -1,4 +1,6 @@
-﻿using KiwiUoW.Extensions;
+﻿using System;
+using System.Collections.Generic;
+using KiwiUoW.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -45,6 +47,20 @@ namespace KiwiUoW
                 }
             }
             return null;
+        }
+
+        public static IEnumerable<Type> GetRepositories()
+        {
+            var result = new List<Type>();
+            foreach (var prop in typeof(T).GetProperties())
+            {
+                if (prop.PropertyType.IsSubclassOfGeneric(typeof(GenericRepository<,>)))
+                {
+                    result.Add(prop.PropertyType);
+                }
+            }
+
+            return result;
         }
     }
 }

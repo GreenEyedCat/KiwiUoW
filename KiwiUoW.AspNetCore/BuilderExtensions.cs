@@ -13,6 +13,12 @@ namespace KiwiUoW.AspNetCore
             services.AddScoped<UnitOfWorkFactory<T>>();
             services.AddScoped<T>(x => x.GetRequiredService<UnitOfWorkFactory<T>>().Build());
 
+            var repositories = UnitOfWorkFactory<T>.GetRepositories();
+            foreach (var repository in repositories)
+            {
+                services.AddScoped(repository, x => x.GetRequiredService<RepositoryFactory>().Build(repository));
+            }
+
             return services;
         }
     }
