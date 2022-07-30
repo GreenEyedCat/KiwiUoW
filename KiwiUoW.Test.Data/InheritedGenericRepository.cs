@@ -21,7 +21,7 @@ namespace KiwiUoW.Test.Data
 
         public override T Get(TKey id)
         {
-            if(_cache.TryGetValue(CacheKey, out var fromCache))
+            if(_cache.TryGetValue(CacheKey(id), out var fromCache))
             {
                 return (T)fromCache;
             }
